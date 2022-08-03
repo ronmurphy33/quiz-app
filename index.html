@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Welcome to Quiz App!</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <h1>Welcome to Quiz App!</h1>
+        <!-- start box -->
+        <div id="start-box" class="container">
+            <p>What kind of quiz would you like to take?</p>
+            <form action="" id="start-form">
+                <div id="form-top">
+                    <label for="category">Category: </label>
+                <select name="category" id="category">
+                    <option value="general knowledge">General knowledge</option>
+                    <option value="sports">Sports</option>
+                    <option value="history">History</option>
+                    <option value="music">Music</option>
+                </select>
+                <label for="difficulty">Difficulty: </label>
+                <select name="difficulty" id="difficulty">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+                </div>
+                <div id="form-bottom">
+                    <label for="quantity"># of Questions(between 5 and 20): </label>
+                    <input
+                        type="number"
+                        name="quantity"
+                        id="quantity"
+                        min="5"
+                        max="20"
+                    />
+                    <input type="submit" class="btn" value="Go!" />
+                </div>
+            </form>
+        </div>
+        <!-- question box -->
+        <div id="question-box" class="container">
+            <p id="question">This is the question being asked?</p>
+            <div id="answer-btns">
+                <button id="answer-1" class="btn">Answer 1</button>
+                <button id="answer-2" class="btn">Answer 2</button>
+                <button id="answer-3" class="btn">Answer 3</button>
+                <button id="answer-4" class="btn">Answer 4</button>
+            </div>
+            <input type="button" class="btn" value="Next">
+        </div>
+    </body>
+</html>
