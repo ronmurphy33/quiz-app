@@ -22,31 +22,40 @@ h1{
     height: 30%;
     padding: 5px;
     margin: auto;
-    display: flex;
-    flex-direction: column;
-    /* border: 2px solid black; */
     box-shadow: 5px 5px 10px grey;
     border-radius: 25px;
+    overflow: auto;
 }
 
-.container>p{
+#start-box{
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+}
+
+#start-box>p{
     text-align: center;
     flex:1;
     font-size: 1.5rem;
 }
-#start-box{
-    visibility: hidden;
-}
+
 #question-box{
-    visibility: visible;
+    visibility: hidden;
     position: absolute;
     top: 150px;
     left: 450px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
+#question-box>p{
+    font-size: 1.5rem;
+    text-align: center;
+}
 #start-form{
     flex:3;
     align-items: center;
@@ -83,4 +92,16 @@ h1{
     transform: translateY(-0.15rem)
 }
 
+#next-btn{
+    height: 2rem;
+    width: 5rem;
+    justify-content: flex-end;
+    align-self: flex-end;
+}
+
+#answer-btns{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    gap:5px;
+}
 
