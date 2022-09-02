@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Quiz App!</title>
+    <title>Quiz App</title>
     <link rel="stylesheet" href="style.css" />
     <script src="game.js" defer></script>
 </head>
@@ -13,7 +13,8 @@
     <div class="score-box">
         <p id="score"> Question: # / # </p>
     </div>
-    <div id="question-box" class="container">
+    <div id="loader"></div>
+    <div id="question-box" class="container hidden">
         <p id="question">This is the question being asked?</p>
         <div id="answer-btns">
             <button class="btn answer-choice" data-number="1">Answer 1</button>

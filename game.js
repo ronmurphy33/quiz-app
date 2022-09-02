@@ -5,6 +5,8 @@ const scoreText = document.getElementById('score');
 const category = localStorage.getItem('category');
 const difficulty = localStorage.getItem('difficulty');
 const quantity = localStorage.getItem('quantity');
+const game = document.getElementById('question-box');
+const loader = document.getElementById('loader');
 
 console.log(category + " " + difficulty +" "+ quantity);
 
@@ -49,6 +51,9 @@ startGame = () =>{
     maxQuestions = availableQuestions.length;
     console.log('Total questions: '+maxQuestions);
     getNextQuestion();
+    game.classList.remove('hidden');
+    loader.classList.add('hidden');
+
 }   
 
 getNextQuestion =() =>{

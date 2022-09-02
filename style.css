@@ -90,6 +90,14 @@ h1{
     justify-content:space-evenly;
 }
 
+select{
+    border-radius: 25px;
+    text-align: center;
+}
+input{
+    text-align: center;
+}
+
 #form-top{
     display: flex;
     flex-direction: row;
@@ -152,4 +160,25 @@ h1{
     height: 60%;
     border-radius: 25px; 
     align-self: center;
+}
+
+.hidden{
+    display:none !important;
+    
+}
+
+#loader{
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid black;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    margin-top: 100px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
