@@ -12,14 +12,41 @@ body{
 }
 h1{
     text-align: center;
-    padding-top: 20px;
+    padding-top: 10px;
     font-size: 3rem;
+}
+
+.score-box{
+    font-size: 1rem;
+    margin: auto;
+    margin-bottom: 30px;
+    overflow: auto;
+    text-align: center;
+    align-self: center;
+    background-color: white;
+    width: 20%;
+    box-shadow: 5px 5px 10px grey;
+    border-radius: 25px;
+}
+
+#final-score-box{
+    height: 10%;
+    font-size: 1rem;
+    box-shadow: 5px 5px 10px grey;
+    border-radius: 25px;
+    background-color: white;
+    margin: auto;
+    text-align: center;
+    width: 40%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
 }
 
 .container{
     background-color: white;
     width: 40%;
-    height: 30%;
+    height: 40%;
     padding: 5px;
     margin: auto;
     box-shadow: 5px 5px 10px grey;
@@ -27,8 +54,11 @@ h1{
     overflow: auto;
 }
 
+#quiz-title{
+    font-size: 1.5rem;
+}
+
 #start-box{
-    visibility: visible;
     display: flex;
     flex-direction: column;
 }
@@ -40,16 +70,12 @@ h1{
 }
 
 #question-box{
-    visibility: hidden;
-    position: absolute;
-    top: 150px;
-    left: 450px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 #question-box>p{
@@ -91,6 +117,15 @@ h1{
     box-shadow: 2px 2px 3px grey;
     transform: translateY(-0.15rem)
 }
+.correct{
+    border: 5px solid green;
+    background-color: green;
+}
+
+.incorrect{
+    border: 5px solid red;
+    background-color: red;
+}
 
 #next-btn{
     height: 2rem;
@@ -105,3 +140,16 @@ h1{
     gap:5px;
 }
 
+#endgame-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+#meme{
+    width: 40%;
+    height: 60%;
+    border-radius: 25px; 
+    align-self: center;
+}

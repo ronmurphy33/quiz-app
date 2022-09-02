@@ -12,8 +12,8 @@
         <h1>Welcome to Quiz App!</h1>
         <!-- start box -->
         <div id="start-box" class="container">
-            <p>What kind of quiz would you like to take?</p>
-            <form action="" id="start-form">
+            <form id="start-form">
+                <p id="quiz-title">What kind of quiz would you like to take?</p>
                 <div id="form-top">
                     <label for="category">Category: </label>
                 <select name="category" id="category">
@@ -41,17 +41,6 @@
                     <input type="submit" class="btn" value="Go!" />
                 </div>
             </form>
-        </div>
-        <!-- question box -->
-        <div id="question-box" class="container">
-            <p id="question">This is the question being asked?</p>
-            <div id="answer-btns">
-                <button id="answer-1" class="btn">Answer 1</button>
-                <button id="answer-2" class="btn">Answer 2</button>
-                <button id="answer-3" class="btn">Answer 3</button>
-                <button id="answer-4" class="btn">Answer 4</button>
-            </div>
-            <input type="button" class="btn" id="next-btn" value="Next">
         </div>
     </body>
 </html>
