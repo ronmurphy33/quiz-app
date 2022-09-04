@@ -58,7 +58,7 @@ h1{
     .container{
         width: 90%;
         height: 50%;
-        overflow: inherit;
+        word-wrap: break-word;
     }
     #meme{
         width: 90%;
