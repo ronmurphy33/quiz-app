@@ -71,10 +71,6 @@ h1{
     #start-form{
         justify-content: center;
     }
-    #final-score-box{
-        height: 20px;
-        width: 80%;
-    }
 }
 
 #quiz-title{
