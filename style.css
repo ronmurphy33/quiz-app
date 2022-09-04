@@ -58,6 +58,11 @@ h1{
     .container{
         width: 90%;
         height: 70%;
+        padding: 2px;
+    }
+    #meme{
+        width: 90%;
+        height: 80%;
     }
 }
 
@@ -169,6 +174,7 @@ input{
     border-radius: 25px; 
     align-self: center;
 }
+
 
 .hidden{
     display:none !important;
